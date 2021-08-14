@@ -1,0 +1,44 @@
+/* 一行显示 */
+.clamp {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+}
+/* 二行显示 */
+.ellipsis{
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
+/* 三行显示 */
+.threeline{
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;
+}
+/* 底部边线 */
+.borde-b {
+	border-bottom: 1px solid #dddddd;
+}
+
+/* 弹性盒子 */
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.flex_item {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+}
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
